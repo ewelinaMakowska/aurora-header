@@ -18,26 +18,113 @@ html {
 section {
   padding: 80px 0; }
 
+a {
+  text-decoration: none;
+  color: #2e2e2e; }
+
 .top {
   list-style: none;
-  border-bottom: 1px solid #000;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  font-size: 70%; }
+  font-size: 70%;
+  height: 50px; }
+  .top ul {
+    height: 100%; }
   .top li {
-    display: inline-block; }
+    display: inline-block;
+    height: 100%;
+    padding-top: 15px;
+    padding-right: 10px; }
+
+.line {
+  height: 1px;
+  background-color: #b2b2b2; }
 
 .telephone {
   margin-right: 1vw; }
+  .telephone img {
+    margin-right: 5px; }
+
+.mail img {
+  margin-right: 5px; }
+
+.login {
+  margin-left: 35vw;
+  border-color: #b2b2b2;
+  border-style: solid;
+  border-width: 0 1px;
+  padding-left: 10px; }
+  .login img {
+    margin-right: 5px; }
+
+.account {
+  margin-left: 2vw;
+  border-color: #b2b2b2;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  padding-left: 20px;
+  padding-right: 10px; }
+  .account img {
+    margin-right: 5px; }
+
+.logo-row {
+  margin-top: 1vh; }
+  .logo-row input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #000;
+    font-size: 70%;
+    height: 4vh;
+    width: 95%; }
+    .logo-row input:focus {
+      outline: none; }
+
+.want-to-buy {
+  padding-top: 3vh; }
+  .want-to-buy img {
+    border-bottom: 1px solid #000;
+    margin-bottom: -11px;
+    padding-bottom: 10px; }
+
+.basket {
+  padding-top: 3vh;
+  margin-left: 14vw;
+  font-size: 80%;
+  position: relative; }
+  .basket img {
+    margin-right: 1vw; }
+  .basket span {
+    position: absolute;
+    background-color: #ef8daf;
+    color: #fff;
+    border-radius: 60%;
+    padding: 4px;
+    top: 45px;
+    right: 110px;
+    height: 23px;
+    width: 23px;
+    text-align: center; }
 
 nav {
   list-style: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   nav ul {
     border-bottom: 1px solid #b2b2b2;
-    padding-bottom: 1vh; }
+    margin-top: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 4vh; }
     nav ul li {
       display: inline-block;
-      font-size: 90%; }
+      font-size: 75%;
+      margin-left: 1.5vw;
+      font-weight: bold; }
+      nav ul li a {
+        color: #2e2e2e;
+        transition: color 0.3s; }
+      nav ul li a:hover {
+        color: #ef8daf; }
+
+.first {
+  margin-left: -20px; }
 
 /*# sourceMappingURL=styles.css.map */
