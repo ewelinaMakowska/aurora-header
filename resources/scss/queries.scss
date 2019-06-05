@@ -1,39 +1,71 @@
 @import "data";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #fff;
+@media only screen and (max-width: 1200px) {
+    .row {padding: 0 2%;}
 }
 
-html {
-    color: $dark-grey;
-    font-family:'Lato', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-}
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
+@media only screen and (max-width: 1023px) {
+    .want-to-buy {
+    padding-top: 3vh;
+    img {
+        border-bottom: 1px solid #fff;
+        margin-bottom: -9px;
+        padding-bottom: 10px;
+    }
+}
+    
+     .basket {
+    span {
+        top: 75%;
+        right: 80%;  
+    }
+}
+    
     
 }
 
-section {
-    padding: 80px 0;
-}
-
-a {
-    text-decoration: none;
-    color: $dark-grey;
-}
-
+@media only screen and (max-width: 767px) {
 .top {
+
+.login {
+    margin-left: 20vw;
+}
+
+}
+    
+    .want-to-buy {
+    margin-left: -20%;
+    padding-top: 3vh;
+        position: relative;
+    img {
+        border-bottom: 1px solid #fff;
+        margin-bottom: -9px;
+        padding-bottom: 10px;
+        position:absolute;   
+        top: 43%;
+    }
+}   
+    
+    .basket {
+        span {
+        right: 73%; 
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .top {
     list-style: none;
-    font-size: 70%;
-    height: 50px;
+    font-size: 60%;
+    height: 40px;
     
     
     ul {
@@ -43,18 +75,18 @@ a {
     li {
         display:inline-block;
         height: 100%; 
-        padding-top: 15px;
-        padding-right: 10px;
+        padding-top: 10px;
+        padding-right: 5px;
     }
 }
 
 .line {
     height: 1px;
-    background-color: $middle-grey;
+    background-color: #fff;
 }
 
 .telephone {
-    margin-right: 1vw;
+    margin-right: 0.5vw;
     img {
         margin-right: 5px;
     }
@@ -67,59 +99,60 @@ a {
 }
 
 .login {
-    margin-left: 35vw;
-    @include border-2;
-    padding-left: 10px;
+    margin-left: 5px;
+    padding-left: 5px;
+  
      img {
         margin-right: 5px;
     }
 }
 
 .account {
-   margin-left: 0.5vw;
-   @include border-1;
-    padding-left: 20px;
-    padding-right: 10px;
+   margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
      img {
         margin-right: 5px;
     }
 }
 
 .logo-row {
-    margin-top: 1vh;
+    margin-top: 7vh;
     input {
+        margin-left: 30vw;
         border-top: 0;
         border-right: 0;
         border-left: 0;
         border-bottom: 1px solid #000;
         font-size: 70%;
-        height: 4vh;
-        width: 95%;
+        height: 3vh;
+        width: 30%;
         &:focus {
             outline: none;
         }
     }
 }
 
+.logo-aurora {
+        margin-left: 50vw;
+    }
+    
 .want-to-buy {
-    padding-top: 3vh;
+    padding-top: 1vh;
     img {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #fff;
         margin-bottom: -11px;
         padding-bottom: 10px;
     }
 }
 
 .basket {
-    a {
-        font-weight: bold;
-    }
     padding-top: 3vh;
     margin-left: 14vw;
     font-size: 80%;
     position: relative;
     img {
-        margin-right: 1vw;
+        margin-right: 4vw;
     }
     span {
         position: absolute;
@@ -128,7 +161,7 @@ a {
         border-radius: 60%;
         padding: 4px;
         top: 75%;
-        right: 75%;
+        right: 90%;
         height: 23px;
         width: 23px;
         text-align: center;
@@ -166,7 +199,6 @@ nav {
     margin-left: -20px;
 }
 
-.last {
+
+
 }
-
-

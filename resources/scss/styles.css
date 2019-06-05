@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fff; }
 
@@ -56,7 +57,7 @@ a {
     margin-right: 5px; }
 
 .account {
-  margin-left: 2vw;
+  margin-left: 0.5vw;
   border-color: #b2b2b2;
   border-style: solid;
   border-width: 0 1px 0 0;
@@ -90,6 +91,8 @@ a {
   margin-left: 14vw;
   font-size: 80%;
   position: relative; }
+  .basket a {
+    font-weight: bold; }
   .basket img {
     margin-right: 1vw; }
   .basket span {
@@ -98,8 +101,8 @@ a {
     color: #fff;
     border-radius: 60%;
     padding: 4px;
-    top: 45px;
-    right: 110px;
+    top: 75%;
+    right: 75%;
     height: 23px;
     width: 23px;
     text-align: center; }
@@ -120,11 +123,10 @@ nav {
       font-weight: bold; }
       nav ul li a {
         color: #2e2e2e;
+        -webkit-transition: color 0.3s;
         transition: color 0.3s; }
       nav ul li a:hover {
         color: #ef8daf; }
 
 .first {
   margin-left: -20px; }
-
-/*# sourceMappingURL=styles.css.map */
